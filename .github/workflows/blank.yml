@@ -1,0 +1,15 @@
+name: Verification Workflow
+
+on:
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  verify_email_step:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 24f1001556@ds.study.iitm.ac.in
+        run: echo "This step verifies the email address requirement."
